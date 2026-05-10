@@ -1,0 +1,98 @@
+:root {
+  --rojo: #E63946;
+  --naranja: #F4A261;
+  --amarillo: #FFD60A;
+  --blanco: #F1FAEE;
+  --negro: #0D0D0D;
+  --gris: #1A1A1A;
+}
+
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos con fuente Anton */
+h1, h2, .section-title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  color: var(--amarillo);
+}
+
+/* Botones con Gradiente Clancy */
+.main-button, .login-button {
+  background: linear-gradient(45deg, var(--rojo), var(--naranja));
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+
+.main-button:hover {
+  transform: scale(1.02);
+  filter: brightness(1.2);
+}
+
+/* Cajas ocultas que se despliegan */
+.login-box, .chat-box, .merch-form {
+  display: none;
+  background: var(--gris);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--rojo);
+  margin-bottom: 20px;
+}
+
+/* Inputs profesionales */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Estilo Instagram */
+.instagram {
+  color: var(--naranja);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Imágenes */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--amarillo);
+  object-fit: cover;
+}
+
+.polaroid-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
